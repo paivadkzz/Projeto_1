@@ -1,0 +1,390 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(max2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    padding-top: 70px;
+}
+
+/* MENU */
+nav {
+    background-color: white;
+    padding: 15px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    text-align: center;
+    width: 100%;
+    z-index: 1000;
+
+}
+
+section {
+    scroll-margin-top: 75px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    color: rgb(0, 0, 253);
+}
+
+/* HOME */
+#home {
+    color: white;
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* CARDS */
+#sobre,
+#servico-desktop,
+#servico-mobile {
+    background-color: white;
+    color: black;
+    text-align: center;
+    padding: 15px;
+    margin: 20px auto;
+    border-radius: 15px;
+    border: solid black 5px;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+}
+
+/* BIO */
+#bio {
+    background-color: white;
+    border-radius: 15px;
+    border: solid black 5px;
+    min-height: 300px;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    margin: 20px auto;
+    padding: 25px;
+    width: 100%;
+    max-width: 700px;
+}
+
+/* IMAGENS */
+.foto-1 {
+    display: block;
+    margin: auto;
+    max-width: 100%;
+    height: 700px;
+    width: 700px;
+    border: solid black 5px;
+    border-radius: 15px;
+
+}
+.foto-2 {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+    height: 500px;
+    width: 800px;
+    border: solid black 5px;
+    border-radius: 15px;
+}
+
+/* INSTAGRAM */
+.instagram-link {
+    display: block;
+    text-align: center;
+    margin: 10px auto;
+    width: 125px;
+}
+
+.instagram {
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.instagram:hover {
+    background-color: rgb(130, 0, 252);
+}
+
+/* LISTA */
+.lista {    
+    color: black;
+    text-align: left;
+    background-color: white;
+    border: solid black 5px;
+    border-radius: 15px;
+    margin: 20px auto;
+    padding: 40px;
+    font-size: 20px;
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+}
+
+.Titulo-lista {
+    color: black;
+    text-align: center;
+    background-color: white;
+    border: solid black 5px;
+    border-radius: 10px;
+    margin: 20px auto;
+    padding: 10px;
+    font-size: 30px;
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+}
+
+/* FORMULÁRIO */
+form {
+    text-align: center;
+    align-items: center;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+/* TABELA */
+.tabela {
+    width: 100%;
+    max-width: 500px;
+    margin: 20px auto;
+    border-collapse: collapse;
+    text-align: center;
+    background-color: white;
+    border: solid black 5px;
+}
+
+.tabela th {
+    background-color: #1e1e1e;
+    color: white;
+    padding: 10px;
+}
+
+.tabela td {
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+/* VÍDEO */
+.video {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+    body {
+        padding-top: 120px;
+        font-size: 14px;
+    }
+
+    nav {
+        padding: 10px;
+    }
+
+    nav ul {
+        gap: 8px;
+    }
+
+    nav ul li {
+        margin: 5px;
+    }
+
+    nav ul li a {
+        font-size: 14px;
+    }
+
+    section {
+        scroll-margin-top: 130px;
+    }
+
+    #sobre,
+    #servico-desktop,
+    #servico-mobile,
+    #bio,
+    .lista,
+    .Titulo-lista,
+    .tabela {
+        max-width: 90%;
+    }
+
+    .Titulo-lista {
+        font-size: 22px;
+    }
+
+    .lista {
+        font-size: 16px;
+        padding: 25px;
+    }
+
+    #home h1 {
+        font-size: 32px;
+    }
+
+    #home p {
+        font-size: 18px;
+    }
+
+    .foto-1,
+    .foto-2 {
+        max-width: 90%;
+    }}
+
+    
+/* ===== MODO ESCURO ===== */
+[data-theme="dark"] {
+    color-scheme: dark;
+}
+
+[data-theme="dark"] body {
+    /* fundo já é a imagem, não precisa mudar */
+}
+
+[data-theme="dark"] nav {
+    background-color: #1a1a2e;
+}
+
+[data-theme="dark"] nav ul li a {
+    color: #e0e0e0;
+}
+
+[data-theme="dark"] nav ul li a:hover {
+    color: #6eb5ff;
+}
+
+[data-theme="dark"] #sobre,
+[data-theme="dark"] #servico-desktop,
+[data-theme="dark"] #servico-mobile {
+    background-color: #1e1e2e;
+    color: #e0e0e0;
+    border-color: #444466;
+}
+
+[data-theme="dark"] #bio {
+    background-color: #1e1e2e;
+    color: #e0e0e0;
+    border-color: #444466;
+}
+
+[data-theme="dark"] .lista {
+    background-color: #1e1e2e;
+    color: #e0e0e0;
+    border-color: #444466;
+}
+
+[data-theme="dark"] .Titulo-lista {
+    background-color: #1e1e2e;
+    color: #e0e0e0;
+    border-color: #444466;
+}
+
+[data-theme="dark"] .tabela {
+    background-color: #1e1e2e;
+    border-color: #444466;
+}
+
+[data-theme="dark"] .tabela td {
+    color: #e0e0e0;
+    border-color: #444466;
+}
+
+[data-theme="dark"] .tabela th {
+    background-color: #0d0d1a;
+    color: #ffffff;
+}
+
+[data-theme="dark"] #contato label,
+[data-theme="dark"] #contato h2 {
+    color: #e0e0e0;
+}
+
+[data-theme="dark"] #contato input,
+[data-theme="dark"] #contato textarea {
+    background-color: #2a2a3e;
+    color: #e0e0e0;
+    border: 1px solid #555577;
+}
+
+[data-theme="dark"] footer {
+    color: #e0e0e0;
+}
+
+[data-theme="dark"] footer a {
+    color: #6eb5ff;
+}
+
+/* Botão modo escuro na nav */
+#btn-tema {
+    background: transparent;
+    border: 1.5px solid #aaa;
+    border-radius: 20px;
+    padding: 5px 14px;
+    font-size: 14px;
+    cursor: pointer;
+    color: inherit;
+    transition: all 0.3s ease;
+    margin-left: 15px;
+}
+
+#btn-tema:hover {
+    background-color: rgba(0,0,0,0.1);
+}
+
+[data-theme="dark"] #btn-tema {
+    border-color: #888;
+    color: #e0e0e0;
+}
+
+[data-theme="dark"] #btn-tema:hover {
+    background-color: rgba(255,255,255,0.1);
+}
+
+.animate-scroll {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.animate-scroll.visivel {
+    opacity: 1;
+    transform: translateY(0);
+}
